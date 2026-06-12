@@ -14,7 +14,7 @@ screenshot evidence, mencatat command, dan melakukan analisis response serta for
 data.
 
 ## Case yang Dipilih
-Contoh: Case 1 - User/Profile API
+Case 1 - User/Profile API
 
 ## Daftar Request
 1. GET daftar data
