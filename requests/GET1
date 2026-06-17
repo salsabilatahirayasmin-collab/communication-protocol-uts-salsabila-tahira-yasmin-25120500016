@@ -1,0 +1,87 @@
+{
+  "resource": "users",
+  "case": "User",
+  "count": 8,
+  "methods": [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE"
+  ],
+  "canonicalPath": "/api/users",
+  "itemPathExample": "/api/users/1",
+  "data": [
+    {
+      "id": 1,
+      "username": "student.demo.updated",
+      "email": "student.demo.updated@example.edu",
+      "role": "student",
+      "status": "inactive",
+      "department": "Sains Data",
+      "updatedAt": "2026-06-12T20:34:14+0700"
+    },
+    {
+      "id": 2,
+      "username": "ops.analyst",
+      "email": "ops.analyst@example.edu",
+      "role": "analyst",
+      "status": "active",
+      "department": "Data Operations"
+    },
+    {
+      "id": 3,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-11T12:56:47+0700"
+    },
+    {
+      "id": 4,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-12T16:31:21+0700"
+    },
+    {
+      "id": 5,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-12T16:33:49+0700"
+    },
+    {
+      "id": 6,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-12T16:36:00+0700"
+    },
+    {
+      "id": 7,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-12T16:43:28+0700"
+    },
+    {
+      "id": 8,
+      "username": "data.student",
+      "email": "data.student@example.edu",
+      "role": "student",
+      "status": "active",
+      "department": "Sains Data",
+      "createdAt": "2026-06-12T20:33:55+0700"
+    }
+  ]
+}

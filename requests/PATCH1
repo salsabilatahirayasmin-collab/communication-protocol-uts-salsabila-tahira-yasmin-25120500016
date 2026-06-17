@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "username": "student.demo.updated",
+  "email": "student.demo.updated@example.edu",
+  "role": "student",
+  "status": "inactive",
+  "department": "Sains Data",
+  "updatedAt": "2026-06-12T20:36:12+0700"
+}

@@ -1,0 +1,15 @@
+{
+  "error": "Invalid fields",
+  "resource": "users",
+  "invalid": [
+    "id",
+    "createdAt"
+  ],
+  "allowed": [
+    "department",
+    "email",
+    "role",
+    "status",
+    "username"
+  ]
+}

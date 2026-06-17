@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "username": "ops.analyst",
+  "email": "ops.analyst@example.edu",
+  "role": "analyst",
+  "status": "active",
+  "department": "Data Operations"
+}
