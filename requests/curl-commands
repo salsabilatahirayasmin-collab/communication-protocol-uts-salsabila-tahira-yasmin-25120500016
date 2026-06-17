@@ -1,1 +1,38 @@
+## Base URL
+BASE_URL_DEMO_APP
 
+## Request 1 - GET Daftar Data
+GET/http:127.0.0:8088/api/users
+
+Penjelasan:
+- Method: GET
+- Tujuan: Mengambil daftar data user
+- Expected status code: 200 OK
+
+## Request 2 - GET Detail Data
+GET/http:127.0.0:8088/api/users/2
+
+Penjelasan:
+- Method: GET
+- Tujuan: Mengambil detail data user berdasarkan ID
+- Expected status code: 200 OK
+
+## Request 3 - POST Tambah Data
+POST/http:127.0.0:8088/api/users
+{"username": "data.student", "email": "data.student@example.edu", "role": "student", "status": "active", "department": "Sains Data"}
+
+Penjelasan:
+- Method: POST
+- Tujuan: Menambahkan data user baru
+- Header penting: Content-Type: application/json
+- Expected status code: 201 Created atau 200 OK
+
+## Request 4 - Patch Update Data
+PATCH/http:127.0.0:8088/api/users/1
+{"status": "inactive"}
+
+Penjelasan:
+- Method: POST
+- Tujuan: Mengirim perubahan data produk
+- Header penting: Content-Type: application/json
+- Expected status code: 200 OK
