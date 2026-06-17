@@ -21,32 +21,39 @@ Analisis response: Response berisi object detail profil user dengan field id, us
 
 ## 4. Analisis Request POST
 ### POST 01
-Endpoint: /api/products
+Endpoint: /api/users
 Tujuan request: Menambahkan data produk baru.
 Request body:
 {
-"name": "Produk Demo",
-"price": 10000
+"username": "data.student", "email": "data.student@example.edu", "role": "student", "status": "active", "department": "Sains Data"
 }
-Analisis: Field name bertipe string, sedangkan price bertipe number/integer.
-### POST 02
-Endpoint: /api/products/1/update
-Tujuan request: Mengirim perubahan data produk.
+Analisis: semua field bertipe string.
+
+### PATCH
+Endpoint: /api/users/1
+Tujuan request: Mengirim perubahan data user.
 Request body:
 {
-"stock": 25
+"status": "inactive"
 }
-Analisis: Field stock bertipe integer dan digunakan untuk memperbarui jumlah stok
-produk.
+Analisis: Field status bertipe string dan digunakan untuk memperbarui status keaktifan pelajar.
+
 ## 5. Analisis Header
 Header penting: Content-Type: application/json
 Makna: Header ini menunjukkan bahwa data request atau response menggunakan format
 JSON.
+
 ## 6. Analisis Status Code
 200 OK: request berhasil.
 201 Created: data baru berhasil dibuat.
 400 Bad Request: format request/body tidak sesuai.
-404 Not Found: endpoint atau data tidak ditemukan.
+
 ## 7. Kesimpulan
-Tulis 3-5 kalimat pembelajaran dari hasil praktikum.
+1. Pemahaman REST API
+- Method GET, POST, PATCH berhasil   dijalankan: GET untuk membaca, POST untuk membuat, PATCH untuk update parsial.
+- Status code memberikan informasi yang jelas tentang hasil request (200, 201, 400).
+2. Validasi Data oleh Server
+- Server menolak field id dan createdAt pada request POST karena kedua field tersebut merupakan tanggung jawab server (auto‑generated).
+- Client hanya perlu mengirim field yang diizinkan, sehingga integritas data terjaga.
+
 
